@@ -11,6 +11,8 @@
     "ESPPORT": "/dev/ttyUSB0"
   },
   "runArgs": [
+    "--name=devcontainer-${localWorkspaceFolderBasename}",
+    "--hostname=${localWorkspaceFolderBasename}",
     "--userns=keep-id",
     "--device=/dev/ttyUSB0",
     "--annotation=run.oci.keep_original_groups=1"
